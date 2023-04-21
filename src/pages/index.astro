@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import SocialIcon from "../components/SocialIcon.astro";
+import Divider from "../components/Divider.astro";
+import "@fontsource/fira-code";
+import { SEO } from "astro-seo";
+---
+
+<Layout title="thuanowa links">
+  <SEO description="thuanowa links link in bio website" />
+  <main>
+    <h1>Thuan's <span class="text-gradient">links</span></h1>
+    <p class="intro">I'm making the internet more beautiful and blazingly fast</p>
+    <ul role="list" class="link-card-grid">
+      <Card href="https://docs.google.com/document/d/1vLrTNjnHL_zEaVJs61mfBKhwc7vHxHvokx3cJpmQnok" title="My resume" body="I'm currently finding April 2023 Front-end Intern in HCM City or remote" />
+      <Card href="https://github.com/thuanowa/garden/blob/main/The%20garden%20of%20thoughts.md#the-garden-of-thoughts" title="Garden" body="The garden of thoughts aka my notes, blog any relative to writing" />
+      <Card href="https://pay.thuanowa.com/" title="Payment" body="Help me pay my water bill" />
+      <Card href="https://photos.google.com/share/AF1QipN4721ABAfc_BeSzYTuw1jljw5NwesWNpA_2aGE-NggARn8um4asLDAmKeTmV3sWQ?key=aVU1dkwwODRnbjQwcV9wdWk1bjNXRlR4R25OQm1B&pli=1" title="Photos" body="All my photos" />
+      <Card href="https://m.me/thuanowa" title="Chat" body="Chat with me on facebook messenger" />
+      <Card href="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia/Ho_Chi_Minh&title=Thuan+Pham+Calendar&showNav=1&mode=WEEK&src=dGh1YW5vd2FAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udmlldG5hbWVzZSNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%237CB342&color=%2333B679&color=%230B8043" title="Schedule" body="See what time i busy or note, using my google calendar" />
+    </ul>
+    <br />
+    <Divider />
+    <p class="fun">For Fun</p>
+    <ul role="list" class="link-card-grid">
+      <Card href="https://github.com/thuanowa/garden/blob/main/Gear%20I%20use.md" title="Gear" body="Gear I use" />
+      <Card href="https://github.com/thuanowa/garden/blob/main/music%20i%20like.md" title="Music" body="Music I like, people, language" />
+    </ul>
+  </main>
+  <section id="social-icons" class="justify-center flex flex-row mb-2">
+    <div class="mr-4">
+      <SocialIcon icon="simple-icons:github" color="#575279" label="github" url="https://github.com/thuanowa" />
+    </div>
+    <div class="mr-4">
+      <SocialIcon icon="simple-icons:youtube" label="youtube" color="#575279" url="https://www.youtube.com/@thuanowa" />
+    </div>
+    <div class="mr-4">
+      <SocialIcon icon="simple-icons:gmail" label="Email" color="#575279" url="mailto:thuanowa@gmail.com" />
+    </div>
+    <div class="mr-4">
+      <SocialIcon icon="simple-icons:figma" color="#575279" label="figma" url="https://figma.com/@thuanowa" />
+    </div>
+    <div class="mr-4">
+      <SocialIcon icon="simple-icons:linkedin" color="#575279" label="linkedin" url="https://linkedin.com/in/thuanowa" />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+
+  .fun {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+  }
+  .intro {
+    line-height: 1.6;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+    font-family: Fira Code, monospace;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    font-family: Fira Code, monospace;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+  .gradient-line {
+    margin: 0 0 50px 0;
+    display: block;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #0071b9;
+    background: linear-gradient(to right, white, #ff1493, #2db4eb, #ff1493, white);
+  }
+  div {
+    display: flex;
+    justify-content: center;
+  }
+</style>
