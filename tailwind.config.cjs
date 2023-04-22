@@ -7,16 +7,6 @@ module.exports = {
     lg: "976px",
     xl: "1440px",
   },
-  theme: {
-    colors: {
-      blue: {
-        500: "#0A66C2",
-      },
-      orange: "#F58025",
-      black: "#181717",
-    },
-    extend: {},
-  },
 
   plugins: [],
 };

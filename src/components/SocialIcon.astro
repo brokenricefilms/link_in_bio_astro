@@ -1,20 +1,16 @@
 ---
-import Icon from 'astro-icon';
+import Icon from "astro-icon";
 
 export interface Props {
   url: string;
   icon: string;
   label: string;
-  color: string
 }
 
-const { url, icon, label, color } = Astro.props;
+const { url, icon, label } = Astro.props;
 ---
 
-<a
-  href={url}
-  aria-label={label}
-  rel="noopener"
->
-  <Icon class="h-8" color={color} name={icon} />
+<a href={url} aria-label={label} rel="noopener">
+  <Icon class="h-8" color="hsl(248deg 19% 40%)" name={icon} />
 </a>
+
