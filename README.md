@@ -1,3 +1,5 @@
-# link_in_bio_astro
+# Link in bio
 
-Thanks [@twhite96](https://github.com/twhite96): https://github.com/twhite96/tw-links
+Use [Rosé Pine color](https://rosepinetheme.com/)
+
+Thanks [@twhite96](https://github.com/twhite96): <https://github.com/twhite96/tw-links>
