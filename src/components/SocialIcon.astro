@@ -10,7 +10,6 @@ export interface Props {
 const { url, icon, label } = Astro.props;
 ---
 
-<a href={url} aria-label={label} rel="noopener">
+<a href={url} aria-label={label} rel="noopener" target="_blank">
   <Icon class="h-8" color="hsl(248deg 19% 40%)" name={icon} />
 </a>
-
