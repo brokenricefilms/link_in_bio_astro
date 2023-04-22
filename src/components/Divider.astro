@@ -8,17 +8,18 @@ const { noPadding = false, ariaHidden = true } = Astro.props;
 ---
 
 <div class={`max-w-3xl mx-auto ${noPadding ? "px-0" : "pt-1"}`}>
-  <hr class="gradient-line " aria-hidden={ariaHidden} />
+  <hr class="gradient-line" aria-hidden={ariaHidden} />
 </div>
 
 <style>
   .gradient-line {
-     margin: 0 0 10px 0;
-     display: block;
-     border: none;
-     height: 1px;
-     width: 100%;
-     background: #0071B9;
-     background: linear-gradient(to right, white, #ff1493, #2db4eb, #ff1493, white);
+    margin: 0 0 10px 0;
+    display: block;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #0071b9;
+    background: linear-gradient(to right, white, #ff1493, #2db4eb, #ff1493, white);
   }
 </style>
+

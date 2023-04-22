@@ -11,10 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^2.2.2",
     "@astrojs/sitemap": "^1.2.2",
     "@astrojs/tailwind": "^3.0.0-beta.1",
-    "@fontsource/fira-code": "^4.5.12",
+    "@fontsource/comic-mono": "^4.5.3",
     "astro": "^2.3.0",
     "astro-compress": "^1.1.39",
     "astro-icon": "^0.8.0",
