@@ -11,11 +11,11 @@ const { url, icon, label } = Astro.props;
 ---
 
 <a href={url} aria-label={label} rel="noopener" target="_blank">
-  <Icon class="h-8 icon" color="hsl(248deg 19% 40%)" name={icon} />
+  <Icon class="h-8 icon" color="#000000" name={icon} />
 </a>
 
 <style>
   .icon:hover {
-    color: hsl(3deg 53% 67%);
+    color: hsl(0, 0%, 50%);
   }
 </style>
