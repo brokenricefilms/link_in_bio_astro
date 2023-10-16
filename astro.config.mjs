@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://link-in-bio.thuanowa.com/",
+  site: "https://thuanowa.github.io",
+  base: "/link_in_bio_astro"
   integrations: [tailwind(), compress(), robotsTxt(), sitemap()],
 });
